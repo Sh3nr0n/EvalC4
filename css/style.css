@@ -45,3 +45,7 @@
 .delete{
     width:20px;
 }
+
+.modal-body{
+    height:80vh;
+}
