@@ -1,17 +1,41 @@
+/* Navbar settings */
+
 #logo{
     width:200px;
     height:100px;
     margin-left:30vh;
 }
 
+.navbar{
+    background-color:  #E1EFE0;
+}
+
+
 .navButtons{
     width: 50px;
     margin-left: 5vh;
     margin-right: 5vh;
+    fill:grey;
 }
+
 
 #marketing{
     margin-right:30vh;
+}
+
+/* Main settings*/
+
+.warning{
+    width:20px;
+}
+
+/* Modal settings*/
+
+.marginPerso{
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;    
 }
 
 .btn{
@@ -20,9 +44,4 @@
 
 .delete{
     width:20px;
-}
-
-.btn-success{
-    background-color: #7DAB7A;
-    border:none;
 }

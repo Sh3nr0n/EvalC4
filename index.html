@@ -14,26 +14,23 @@
     <header>
 
         <!-- Navbar : Logo + buttons (x5) / RQ : add warning badge -->
+
         <nav class="navbar">
-
-
             <img id="logo" src="img/logo.png" width="30" height="30" alt="">
             <div class="d-flex justify-content-end">
-
                 <img id="sales" class="img-fluid navButtons" src="img/shopping-cart.svg">
                 <img id="addEntry" class="img-fluid navButtons" src="img/plus-circle.svg">
                 <img id="lostStock" class="img-fluid navButtons" src="img/minus-circle.svg">
                 <img id="printList" class="img-fluid navButtons" src="img/print.svg">
                 <img id="marketing" class="img-fluid navButtons" src="img/map-marker-alt.svg">
-
             </div>
         </nav>
-
     </header>
 
     <main>
 
         <!-- 3 tabs with nested tables / RQ : disable "Tous" and "Fruits, enhance layout"-->
+
         <div class="container-fluid d-flex justify-content-center">
 
             <div class="row">
@@ -63,46 +60,59 @@
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td></td>
                                         <td>Ail</td>
                                         <td class="text-center">30</td>
                                     </tr>
                                     <tr>
+                                        <td></td>
                                         <td>Brocoli</td>
                                         <td class="text-center">20</td>
                                     </tr>
                                     <tr>
+                                        <td></td>
                                         <td>Chou de Bruxelle</td>
                                         <td class="text-center">12</td>
                                     </tr>
                                     <tr>
+                                        <td></td>
                                         <td>Comcombre</td>
                                         <td class="text-center">6,3</td>
                                     </tr>
                                     <tr>
+                                        <td></td>
                                         <td>Cornichon</td>
                                         <td class="text-center">10,6</td>
                                     </tr>
                                     <tr>
+                                        <td></td>
                                         <td>Epinard</td>
                                         <td class="text-center">5,2</td>
                                     </tr>
                                     <tr>
+                                        <td></td>
                                         <td>Haricots</td>
                                         <td class="text-center">12,4</td>
                                     </tr>
                                     <tr>
+                                        <td>
+                                            <img class="warning" src="img/exclamation-triangle.svg">
+                                        </td>
                                         <td>Mâche</td>
                                         <td class="text-center">3,5</td>
                                     </tr>
                                     <tr>
+                                        <td>
+                                            <img class="warning" src="img/exclamation-triangle.svg">
+                                        </td>
                                         <td>Patate douce</td>
                                         <td class="text-center">5</td>
                                     </tr>
                                     <tr>
+                                        <td></td>
                                         <td>Pomme de terre</td>
                                         <td class="text-center">120</td>
                                     </tr>
-
                                 </tbody>
                             </table>
                         </div>
@@ -113,102 +123,99 @@
 
         </div>
 
-        <!-- Modals for each navbar buttons (x5) : #newSale, #newEntry, #losses, #print, #cities-->
-
         <!-- New sales Input lists + buttons-->
 
         <div id="newSale" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="marginPerso">
 
                         <div class="d-flex flex-column">
-                            <h5 class="modal-title text-center">Nouvelle vente</h5>
+                            <h5 class="modal-title">Nouvelle vente</h5>
                         </div>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-3">
-                                <p class="text-muted">Heure</p>
-                                <input type="datetime" class="form-control" placeholder="15:34">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <p class="text-muted">Heure</p>
+                                    <input type="datetime" class="form-control" placeholder="15:34">
+                                </div>
+                                <div class="col-9">
+                                    <p class="text-muted">Ville</p>
+                                    <div class="input-group">
+                                        <select class="custom-select">
+                                            <option selected>Pamiers city</option>
+                                            <option value="1">...</option>
+                                            <option value="2">..</option>
+                                            <option value="3">.</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-9">
-                                <p class="text-muted">Ville</p>
-                                <div class="input-group">
-                                    <select class="custom-select">
-                                        <option selected>Pamiers city</option>
-                                        <option value="1">...</option>
-                                        <option value="2">..</option>
-                                        <option value="3">.</option>
-                                    </select>
+                            <br>
+                            <br>
+                            <div class="row">
+                                <div class="col-3">
+                                    <p class="text-muted">Quantité</p>
+                                    <input type="datetime" class="form-control" placeholder="100">
+                                </div>
+                                <div class="col-8">
+                                    <p class="text-muted">Fruit/Légume</p>
+                                    <div class="input-group">
+                                        <select class="custom-select">
+                                            <option selected>Patates</option>
+                                            <option value="1">...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <p>&nbsp</p>
+                                    <img class="delete" src="img/trash-alt.svg">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <p class="text-muted">Quantité</p>
+                                    <input type="datetime" class="form-control" placeholder="2,5">
+                                </div>
+                                <div class="col-8">
+                                    <p class="text-muted">Fruit/Légume</p>
+                                    <div class="input-group">
+                                        <select class="custom-select">
+                                            <option selected>Tomates</option>
+                                            <option value="1">...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <p>&nbsp</p>
+                                    <img class="delete" src="img/trash-alt.svg">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <p class="text-muted">Quantité</p>
+                                    <input type="datetime" class="form-control" placeholder="1">
+                                </div>
+                                <div class="col-8">
+                                    <p class="text-muted">Fruit/Légume</p>
+                                    <div class="input-group">
+                                        <select class="custom-select">
+                                            <option selected>Salades</option>
+                                            <option value="1">...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <p>&nbsp</p>
+                                    <img class="delete" src="img/trash-alt.svg">
                                 </div>
                             </div>
                         </div>
-                        <br>
-                        <br>
-
-                        <div class="row">
-                            <div class="col-3">
-                                <p class="text-muted">Quantité</p>
-                                <input type="datetime" class="form-control" placeholder="100">
-                            </div>
-                            <div class="col-8">
-                                <p class="text-muted">Fruit/Légume</p>
-                                <div class="input-group">
-                                    <select class="custom-select">
-                                        <option selected>Patates</option>
-                                        <option value="1">...</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-1">
-                                <p>&nbsp</p>
-                                <img class="delete" src="img/trash-alt.svg">
-                            </div>
+                        <div class="d-flex justify-content-around">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                            <button type="button" class="btn btn-primary">Ajouter un élément</button>
+                            <button type="button" class="btn btn-success">Valider la vente</button>
                         </div>
-                        <div class="row">
-                            <div class="col-3">
-                                <p class="text-muted">Quantité</p>
-                                <input type="datetime" class="form-control" placeholder="2,5">
-                            </div>
-                            <div class="col-8">
-                                <p class="text-muted">Fruit/Légume</p>
-                                <div class="input-group">
-                                    <select class="custom-select">
-                                        <option selected>Tomates</option>
-                                        <option value="1">...</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-1">
-                                <p>&nbsp</p>
-                                <img class="delete" src="img/trash-alt.svg">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-3">
-                                <p class="text-muted">Quantité</p>
-                                <input type="datetime" class="form-control" placeholder="1">
-                            </div>
-                            <div class="col-8">
-                                <p class="text-muted">Fruit/Légume</p>
-                                <div class="input-group">
-                                    <select class="custom-select">
-                                        <option selected>Salades</option>
-                                        <option value="1">...</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-1">
-                                <p>&nbsp</p>
-                                <img class="delete" src="img/trash-alt.svg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer d-flex justify-content-center">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
-                        <button type="button" class="btn btn-primary">Ajouter un élément</button>
-                        <button type="button" class="btn btn-success">Valider la vente</button>
                     </div>
                 </div>
             </div>
@@ -218,28 +225,29 @@
         <div id="newEntry" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
-
-                    <div class="modal-body">
-                        <h5 class="modal-title text-center">Nouvelle entrée dans le stock</h5>
-                        <div class="row">
-                            <div class="col-3">
-                                <p class="text-muted">Quantité</p>
-                                <input type="datetime" class="form-control" placeholder="3">
-                            </div>
-                            <div class="col-9">
-                                <p class="text-muted">Fruit/Légume</p>
-                                <div class="input-group">
-                                    <select class="custom-select">
-                                        <option selected>Courgettes</option>
-                                        <option value="1">...</option>
-                                    </select>
+                    <div class="marginPerso">
+                        <div class="modal-body">
+                            <h5 class="modal-title">Nouvelle entrée dans le stock</h5>
+                            <div class="row">
+                                <div class="col-3">
+                                    <p class="text-muted">Quantité</p>
+                                    <input type="datetime" class="form-control" placeholder="3">
+                                </div>
+                                <div class="col-9">
+                                    <p class="text-muted">Fruit/Légume</p>
+                                    <div class="input-group">
+                                        <select class="custom-select">
+                                            <option selected>Courgettes</option>
+                                            <option value="1">...</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="modal-footer d-flex justify-content-center">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
-                        <button type="button" class="btn btn-success">Ajouter</button>
+                        <div class="d-flex justify-content-around">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                            <button type="button" class="btn btn-success">Ajouter</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -250,44 +258,47 @@
         <div id="losses" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
-
-                    <div class="modal-body">
-                        <h5 class="modal-title text-center">Quantité perdue/jetée</h5>
-                        <div class="row">
-                            <div class="col-3">
-                                <p class="text-muted">Quantité</p>
-                                <input type="datetime" class="form-control" placeholder="3">
-                            </div>
-                            <div class="col-9">
-                                <p class="text-muted">Fruit/Légume</p>
-                                <div class="input-group">
-                                    <select class="custom-select">
-                                        <option selected>Courgettes</option>
-                                        <option value="1">...</option>
-                                    </select>
+                    <div class="marginPerso">
+                        <div class="modal-body">
+                            <h5 class="modal-title">Quantité perdue/jetée</h5>
+                            <div class="row">
+                                <div class="col-3">
+                                    <p class="text-muted">Quantité</p>
+                                    <input type="datetime" class="form-control" placeholder="3">
+                                </div>
+                                <div class="col-9">
+                                    <p class="text-muted">Fruit/Légume</p>
+                                    <div class="input-group">
+                                        <select class="custom-select">
+                                            <option selected>Courgettes</option>
+                                            <option value="1">...</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="modal-footer d-flex justify-content-center">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
-                        <button type="button" class="btn btn-success">Valider la suppression</button>
+                        <div class=" d-flex justify-content-around">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                            <button type="button" class="btn btn-success">Valider la suppression</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <!-- Print : Table-->
+
         <div id="print" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
-                    <div class="d-flex flex-row justify-content-center">
-                        <h5 class="modal-title">Quantité perdue/jetée</h5>
-                        <p class="text-muted">Information sur les sept derniers jours</p>
+                    <div class="d-inline-flex">
+                        <h5 class="modal-title">Impression</h5>
+                        <p class="text-muted"> &nbsp &nbsp Information sur les sept derniers jours</p>
                     </div>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center marginPerso">
                         <button type="button" class="btn btn-success">Imprimer</button>
                     </div>
-                    <div class="container d-flex justify-content-center">
+                    <div class="container d-flex justify-content-center marginPerso">
                         <table class="table">
                             <thead>
                                 <tr>
@@ -372,51 +383,54 @@
         </div>
 
         <!-- Geomarketing  : Table-->
-        <div id="cities" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-            aria-hidden="true">
+
+        <div id="cities" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
+                    <div class="marginPerso">
 
-                    <div class="d-flex flex-row justify-content-center">
-                        <h5 class="modal-title">Quantité perdue/jetée</h5>
-                        <p class="text-muted">Information sur les sept derniers jours</p>
-                    </div>
 
-                    <div class="container d-flex justify-content-center">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Ordre</th>
-                                    <th scope="col">Ville</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Pamiers City</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Foix</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Saverdun</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Toulouse</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>St-Giron</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="d-inline-flex">
+                            <h5>Geomarketing</h5>
+                            <p class="text-muted">&nbsp &nbsp 5 communes les plus consommatrices</p>
+                        </div>
 
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-danger">Imprimer</button>
+                        <div class="container d-flex justify-content-center">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Ordre</th>
+                                        <th scope="col">Ville</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Pamiers City</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Foix</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Saverdun</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Toulouse</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>St-Giron</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-danger">Annuler</button>
+                        </div>
                     </div>
 
                 </div>

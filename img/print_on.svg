@@ -7,24 +7,25 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 384 512"
-   id="svg3394"
+   viewBox="0 0 512 512"
+   id="svg5637"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="map-marker-alt.svg">
+   sodipodi:docname="print_on.svg">
   <metadata
-     id="metadata3402">
+     id="metadata5645">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs3400" />
+     id="defs5643" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -36,17 +37,17 @@
      inkscape:pageshadow="2"
      inkscape:window-width="1301"
      inkscape:window-height="744"
-     id="namedview3398"
+     id="namedview5641"
      showgrid="false"
-     inkscape:zoom="1.1855469"
-     inkscape:cx="44.810544"
+     inkscape:zoom="0.4609375"
+     inkscape:cx="-120.40678"
      inkscape:cy="256"
      inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg3394" />
+     inkscape:current-layer="svg5637" />
   <path
-     d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
-     id="path3396"
-     style="image-rendering:auto;fill:#7dab7a;fill-opacity:1" />
+     d="M464 192h-16V81.941a24 24 0 0 0-7.029-16.97L383.029 7.029A24 24 0 0 0 366.059 0H88C74.745 0 64 10.745 64 24v168H48c-26.51 0-48 21.49-48 48v132c0 6.627 5.373 12 12 12h52v104c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V384h52c6.627 0 12-5.373 12-12V240c0-26.51-21.49-48-48-48zm-80 256H128v-96h256v96zM128 224V64h192v40c0 13.2 10.8 24 24 24h40v96H128zm304 72c-13.254 0-24-10.746-24-24s10.746-24 24-24 24 10.746 24 24-10.746 24-24 24z"
+     id="path5639"
+     style="fill:#dda771;fill-opacity:1" />
 </svg>
