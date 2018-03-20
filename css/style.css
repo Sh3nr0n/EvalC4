@@ -13,3 +13,16 @@
 #marketing{
     margin-right:30vh;
 }
+
+.btn{
+    width:200px;
+}
+
+.delete{
+    width:20px;
+}
+
+.btn-success{
+    background-color: #7DAB7A;
+    border:none;
+}

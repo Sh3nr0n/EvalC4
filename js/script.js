@@ -1,6 +1,9 @@
 $(document).ready(function () {
     $("#sales").on("click", function (){
         $('#newSale').modal('show');
+        $('#sales').attr({
+            src: 'img/shopping-cart.svg'
+        });
     });
     $("#addEntry").on("click", function (){
         $('#newEntry').modal('show');

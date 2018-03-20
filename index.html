@@ -20,11 +20,11 @@
             <img id="logo" src="img/logo.png" width="30" height="30" alt="">
             <div class="d-flex justify-content-end">
 
-                    <img id="sales" class="img-fluid navButtons" src="img/shopping-cart.svg">
-                    <img id="addEntry" class="img-fluid navButtons" src="img/plus-circle.svg">
-                    <img id="lostStock" class="img-fluid navButtons" src="img/minus-circle.svg">
-                    <img id="printList" class="img-fluid navButtons" src="img/print.svg">
-                    <img id="marketing" class="img-fluid navButtons" src="img/map-marker-alt.svg">
+                <img id="sales" class="img-fluid navButtons" src="img/shopping-cart.svg">
+                <img id="addEntry" class="img-fluid navButtons" src="img/plus-circle.svg">
+                <img id="lostStock" class="img-fluid navButtons" src="img/minus-circle.svg">
+                <img id="printList" class="img-fluid navButtons" src="img/print.svg">
+                <img id="marketing" class="img-fluid navButtons" src="img/map-marker-alt.svg">
 
             </div>
         </nav>
@@ -117,109 +117,311 @@
 
         <!-- New sales Input lists + buttons-->
 
-        <div id ="newSale" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div id="newSale" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+
+                        <div class="d-flex flex-column">
+                            <h5 class="modal-title text-center">Nouvelle vente</h5>
+                        </div>
                     </div>
                     <div class="modal-body">
-                        ...
+                        <div class="row">
+                            <div class="col-3">
+                                <p class="text-muted">Heure</p>
+                                <input type="datetime" class="form-control" placeholder="15:34">
+                            </div>
+                            <div class="col-9">
+                                <p class="text-muted">Ville</p>
+                                <div class="input-group">
+                                    <select class="custom-select">
+                                        <option selected>Pamiers city</option>
+                                        <option value="1">...</option>
+                                        <option value="2">..</option>
+                                        <option value="3">.</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+
+                        <div class="row">
+                            <div class="col-3">
+                                <p class="text-muted">Quantité</p>
+                                <input type="datetime" class="form-control" placeholder="100">
+                            </div>
+                            <div class="col-8">
+                                <p class="text-muted">Fruit/Légume</p>
+                                <div class="input-group">
+                                    <select class="custom-select">
+                                        <option selected>Patates</option>
+                                        <option value="1">...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <p>&nbsp</p>
+                                <img class="delete" src="img/trash-alt.svg">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <p class="text-muted">Quantité</p>
+                                <input type="datetime" class="form-control" placeholder="2,5">
+                            </div>
+                            <div class="col-8">
+                                <p class="text-muted">Fruit/Légume</p>
+                                <div class="input-group">
+                                    <select class="custom-select">
+                                        <option selected>Tomates</option>
+                                        <option value="1">...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <p>&nbsp</p>
+                                <img class="delete" src="img/trash-alt.svg">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <p class="text-muted">Quantité</p>
+                                <input type="datetime" class="form-control" placeholder="1">
+                            </div>
+                            <div class="col-8">
+                                <p class="text-muted">Fruit/Légume</p>
+                                <div class="input-group">
+                                    <select class="custom-select">
+                                        <option selected>Salades</option>
+                                        <option value="1">...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <p>&nbsp</p>
+                                <img class="delete" src="img/trash-alt.svg">
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                        <button type="button" class="btn btn-primary">Ajouter un élément</button>
+                        <button type="button" class="btn btn-success">Valider la vente</button>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- New stock entry Input lists + buttons-->
-        <div id ="newEntry" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+        <div id="newEntry" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <h5 class="modal-title text-center">Nouvelle entrée dans le stock</h5>
+                        <div class="row">
+                            <div class="col-3">
+                                <p class="text-muted">Quantité</p>
+                                <input type="datetime" class="form-control" placeholder="3">
+                            </div>
+                            <div class="col-9">
+                                <p class="text-muted">Fruit/Légume</p>
+                                <div class="input-group">
+                                    <select class="custom-select">
+                                        <option selected>Courgettes</option>
+                                        <option value="1">...</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                        <button type="button" class="btn btn-success">Ajouter</button>
                     </div>
                 </div>
             </div>
+        </div>
 
         <!-- Amounts lost : Input lists + buttons-->
 
-        <div id ="losses" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+        <div id="losses" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <h5 class="modal-title text-center">Quantité perdue/jetée</h5>
+                        <div class="row">
+                            <div class="col-3">
+                                <p class="text-muted">Quantité</p>
+                                <input type="datetime" class="form-control" placeholder="3">
+                            </div>
+                            <div class="col-9">
+                                <p class="text-muted">Fruit/Légume</p>
+                                <div class="input-group">
+                                    <select class="custom-select">
+                                        <option selected>Courgettes</option>
+                                        <option value="1">...</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                        <button type="button" class="btn btn-success">Valider la suppression</button>
                     </div>
                 </div>
             </div>
+        </div>
         <!-- Print : Table-->
-        <div id ="print" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
+        <div id="print" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="d-flex flex-row justify-content-center">
+                        <h5 class="modal-title">Quantité perdue/jetée</h5>
+                        <p class="text-muted">Information sur les sept derniers jours</p>
                     </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-success">Imprimer</button>
+                    </div>
+                    <div class="container d-flex justify-content-center">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Légume</th>
+                                    <th scope="col">Cat.</th>
+                                    <th scope="col">Stock</th>
+                                    <th scope="col">Perdue</th>
+                                    <th scope="col">Vendue</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Banane</td>
+                                    <td>F</td>
+                                    <td>23</td>
+                                    <td>3</td>
+                                    <td>35</td>
+                                </tr>
+                                <tr>
+                                    <td>Poire</td>
+                                    <td>F</td>
+                                    <td>13</td>
+                                    <td>1</td>
+                                    <td>22,4</td>
+                                </tr>
+                                <tr>
+                                    <td>Pomme</td>
+                                    <td>F</td>
+                                    <td>15,3</td>
+                                    <td>5</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>Ail</td>
+                                    <td>L</td>
+                                    <td>30</td>
+                                    <td>4,3</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr>
+                                    <td>Brocoli</td>
+                                    <td>L</td>
+                                    <td>20</td>
+                                    <td>6</td>
+                                    <td>32</td>
+                                </tr>
+                                <tr>
+                                    <td>Chou de Bruxelle</td>
+                                    <td>L</td>
+                                    <td>12</td>
+                                    <td>20</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Comcombre</td>
+                                    <td>L</td>
+                                    <td>6,2</td>
+                                    <td>2</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>Cornichon</td>
+                                    <td>L</td>
+                                    <td>10,6</td>
+                                    <td>3</td>
+                                    <td>43</td>
+                                </tr>
+                                <tr>
+                                    <td>Epinard</td>
+                                    <td>L</td>
+                                    <td>5,2</td>
+                                    <td>1</td>
+                                    <td>10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
                 </div>
             </div>
+        </div>
 
         <!-- Geomarketing  : Table-->
-        <div id ="cities" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
+        <div id="cities" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+
+                    <div class="d-flex flex-row justify-content-center">
+                        <h5 class="modal-title">Quantité perdue/jetée</h5>
+                        <p class="text-muted">Information sur les sept derniers jours</p>
                     </div>
+
+                    <div class="container d-flex justify-content-center">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Ordre</th>
+                                    <th scope="col">Ville</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Pamiers City</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Foix</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Saverdun</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Toulouse</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>St-Giron</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-danger">Imprimer</button>
+                    </div>
+
                 </div>
             </div>
+        </div>
 
     </main>
 
