@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trainline</title>
+    <title>Fais pas l'poireau</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -13,13 +13,219 @@
 <body>
     <header>
 
+        <!-- Navbar : Logo + buttons (x5) / RQ : add warning badge -->
+        <nav class="navbar">
+
+
+            <img id="logo" src="img/logo.png" width="30" height="30" alt="">
+            <div class="d-flex justify-content-end">
+
+                    <img id="sales" class="img-fluid navButtons" src="img/shopping-cart.svg">
+                    <img id="addEntry" class="img-fluid navButtons" src="img/plus-circle.svg">
+                    <img id="lostStock" class="img-fluid navButtons" src="img/minus-circle.svg">
+                    <img id="printList" class="img-fluid navButtons" src="img/print.svg">
+                    <img id="marketing" class="img-fluid navButtons" src="img/map-marker-alt.svg">
+
+            </div>
+        </nav>
+
     </header>
 
     <main>
 
+        <!-- 3 tabs with nested tables / RQ : disable "Tous" and "Fruits, enhance layout"-->
+        <div class="container-fluid d-flex justify-content-center">
+
+            <div class="row">
+                <div class="col-10 offset-2">
+
+                    <ul class="nav nav-tabs" id="onglets" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link" id="tous-tab" data-toggle="tab" href="#tous" role="tab" aria-controls="tous" aria-selected="false">Tous</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="fruits-tab" data-toggle="tab" href="#fruits" role="tab" aria-controls="fruits" aria-selected="false">Fruits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="legumes-tab" data-toggle="tab" href="#legumes" role="tab" aria-controls="legumes" aria-selected="true">Légumes</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="contenuOnglets">
+                        <div class="tab-pane fade" id="tous" role="tabpanel" aria-labelledby="tous-tab">...</div>
+                        <div class="tab-pane fade" id="fruits" role="tabpanel" aria-labelledby="fruits-tab">...</div>
+                        <div class="tab-pane fade show active" id="legumes" role="tabpanel" aria-labelledby="legumes-tab">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Nom</th>
+                                        <th scope="col text-center">Quantité kg ou unité</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Ail</td>
+                                        <td class="text-center">30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brocoli</td>
+                                        <td class="text-center">20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chou de Bruxelle</td>
+                                        <td class="text-center">12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Comcombre</td>
+                                        <td class="text-center">6,3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cornichon</td>
+                                        <td class="text-center">10,6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Epinard</td>
+                                        <td class="text-center">5,2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Haricots</td>
+                                        <td class="text-center">12,4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mâche</td>
+                                        <td class="text-center">3,5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Patate douce</td>
+                                        <td class="text-center">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pomme de terre</td>
+                                        <td class="text-center">120</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Modals for each navbar buttons (x5) : #newSale, #newEntry, #losses, #print, #cities-->
+
+        <!-- New sales Input lists + buttons-->
+
+        <div id ="newSale" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New stock entry Input lists + buttons-->
+        <div id ="newEntry" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Amounts lost : Input lists + buttons-->
+
+        <div id ="losses" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Print : Table-->
+        <div id ="print" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Geomarketing  : Table-->
+        <div id ="cities" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
     </main>
 
     <footer>
+
+        <!-- Insert footer here for future devs if needed by client  -->
 
     </footer>
 
